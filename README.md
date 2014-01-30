@@ -3,7 +3,7 @@ JSS
 
 Json Simple Syndication
 
-//RSS is old. Why not use the fantastic Json?//
+*RSS is old. Why not use the fantastic Json?*
 
 ## example
 
@@ -36,7 +36,7 @@ Json Simple Syndication
 }
 ```
 
-## jquery example
+## jQuery example
 
 ```javascript
 $.getJSON( "jss.json", function( data ) {
