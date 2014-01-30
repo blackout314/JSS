@@ -33,3 +33,21 @@ Json Simple Syndication
 	}
 }
 ```
+
+## jquery example
+
+```javascript
+$.getJSON( "jss.json", function( data ) {
+	var items = [];
+	$.each( data, function( key, val ) {
+		debugger;
+		$.each( val.items, function( ikey, ival ) {
+			items.push( "<li id='" + ival.guid + "'>" + ival.title + "</li>" );
+		});
+	});
+	$( "<ul/>", {
+		"class": "my-new-list",
+		html: items.join( "" )
+	}).appendTo( "body" );
+});
+```
