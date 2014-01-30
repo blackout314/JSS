@@ -3,6 +3,8 @@ JSS
 
 Json Simple Syndication
 
+//RSS is old. Why not use the fantastic Json?//
+
 ## example
 
 ```javascript
@@ -40,7 +42,6 @@ Json Simple Syndication
 $.getJSON( "jss.json", function( data ) {
 	var items = [];
 	$.each( data, function( key, val ) {
-		debugger;
 		$.each( val.items, function( ikey, ival ) {
 			items.push( "<li id='" + ival.guid + "'>" + ival.title + "</li>" );
 		});
