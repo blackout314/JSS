@@ -14,13 +14,22 @@ Json Simple Syndication
 		"lastBuildDate": "timestamp",
 		"pubDate": "timestamp",
 		"ttl": 1800,
-		"items": {
+		"items": [
+			{
 			"title" : "title",
 			"description" : "description",
 			"link" : "link",
 			"guid" : "unique string",
 			"pubDate" : "timestamp"
-		}
+			},
+			{
+			"title" : "title",
+			"description" : "description",
+			"link" : "link",
+			"guid" : "unique string",
+			"pubDate" : "timestamp"
+			}
+		]
 	}
 }
 ```
